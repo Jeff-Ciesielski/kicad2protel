@@ -271,6 +271,9 @@ def zipdir(path, ziph):
             ziph.write(os.path.join(root, file))
 
 if __name__ == '__main__':
+    main()
+
+def main():
     arg_parser = argparse.ArgumentParser()
     arg_parser.add_argument('--in_dir', '-i',
                             help='Directory containing KiCad plot output',
